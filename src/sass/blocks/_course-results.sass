@@ -1,0 +1,166 @@
+.course-results
+	padding: 40px 0
+	color: #262731
+	background-color: #F3F4F6
+	&-container
+		max-width: 1462px
+		width: 100%
+		margin: 0 auto
+		padding: 0 10px
+	&__header
+		+column-center
+		text-align: center
+	&__title
+		font-size: 44px
+		line-height: 1.22
+		+bold
+	&__items
+		margin-top: 31px
+		columns: 2
+		gap: 12px
+	&__item
+		position: relative
+		padding: 42px 40px 40px
+		background-color: #fff
+		+column
+		justify-content: center
+		overflow: hidden
+		margin-bottom: 12px
+	&__img
+		position: absolute
+		display: flex
+		height: auto
+		.image-mob
+			display: none
+		img
+			width: 100%
+			height: 100%
+		&--1
+			top: 9px
+			left: -119px
+			width: 232px
+		&--2
+			top: -138px
+			left: -146px
+			width: 285px
+		&--3
+			top: -21px
+			left: -99px
+			width: 192px
+		&--4
+			top: 53px
+			left: -76px
+			width: 202px
+		&--5
+			top: -84px
+			left: -103px
+			width: 212px
+		&--6
+			top: 48px
+			left: -116px
+			width: 231px
+		&--7
+			top: -133px
+			left: -116px
+			width: 231px
+		&--8
+			top: -40px
+			left: -71px
+			width: 192px
+	&__desc
+		z-index: 2
+		position: relative
+		padding: 0 0 0 115px
+	&__name
+		font-size: 24px
+		line-height: 1.22
+		letter-spacing: 0.003em
+		+bold
+	&__text
+		max-width: 483px
+		width: 100%
+		margin-top: 11px
+		font-size: 16px
+		line-height: 1.5
+		+demi
+		color: #8B8B8B
+
+@media (max-width: 985px)
+	.course-results
+		&__title
+			font-size: 34px
+		&__item
+			padding: 24px
+		&__desc
+			padding: 0 0 0 43px
+		&__name
+			font-size: 20px
+		&__text
+			font-size: 14px
+		&__items
+			gap: 10px
+		&__item
+			margin-bottom: 10px
+		&__img
+			.image-desktop
+				display: none
+			.image-mob
+				display: block
+			&--1
+				width: 213px
+				top: -78px
+				left: -146px
+			&--2
+				width: 215px
+				top: -126px
+				left: -134px
+			&--3
+				width: 140px
+				top: -39px
+				left: -89px
+			&--4
+				width: 174px
+				top: -44px
+				left: -122px
+			&--5
+				width: 164px
+				top: -77px
+				left: -99px
+			&--6
+				width: 230px
+				top: -33px
+				left: -174px
+			&--7
+				width: 237px
+				top: -127px
+				left: -156px
+			&--8
+				width: 114px
+				top: -21px
+				left: -68px
+
+@media (max-width: 639px)
+	.course-results
+		padding: 20px 0 10px 0
+		&-container
+			padding: 0 8px
+		&__items
+			columns: 1
+			gap: 4px
+			margin-top: 15px
+		&__item
+			margin-bottom: 4px
+			padding: 20px 19px 14px
+		&__title
+			font-size: 26px
+			line-height: 1.15
+		&__name
+			font-size: 16px
+			letter-spacing: 0
+		&__text
+			font-size: 12px
+			line-height: 1.33
+			margin-top: 5px
+			max-width: 100%
+			width: calc(100% - 33px)
+
